@@ -39,5 +39,9 @@ func GetRecipe(c *fiber.Ctx) error {
 		}
 	}
 
+	if found == nil {
+		return c.Status(fiber.StatusNotFound).JSON(fiber.Map{"error": "recipe not found"})
+	}
+
 	return c.JSON(found)
 }

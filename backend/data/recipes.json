@@ -16,7 +16,13 @@
     "title": "Avocado Toast",
     "image": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=400",
     "prep_time": 10,
-    "ingredients": "2 slices sourdough, 1 avocado, lemon juice, salt, chili flakes"
+    "ingredients": [
+      { "name": "Sourdough bread", "weight": 2, "unit": "slices" },
+      { "name": "Avocado", "weight": 1, "unit": "pcs" },
+      { "name": "Lemon juice", "weight": 5, "unit": "ml" },
+      { "name": "Salt", "weight": 1, "unit": "pinch" },
+      { "name": "Chili flakes", "weight": 1, "unit": "pinch" }
+    ]
   },
   {
     "id": 3,
@@ -46,7 +52,14 @@
     "title": "Thai Peanut Noodles",
     "image": "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=400",
     "prep_time": 30,
-    "ingredients": "Rice noodles 150g, peanut butter 30g, soy sauce, lime, sriracha, scallions"
+    "ingredients": [
+      { "name": "Rice noodles", "weight": 150, "unit": "g" },
+      { "name": "Peanut butter", "weight": 30, "unit": "g" },
+      { "name": "Soy sauce", "weight": 15, "unit": "ml" },
+      { "name": "Lime", "weight": 1, "unit": "pcs" },
+      { "name": "Sriracha", "weight": 10, "unit": "g" },
+      { "name": "Scallions", "weight": 20, "unit": "g" }
+    ]
   },
   {
     "id": 6,
@@ -77,7 +90,14 @@
     "title": "Turkey Wrap",
     "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400",
     "prep_time": 8,
-    "ingredients": "Whole wheat tortilla, sliced turkey 100g, lettuce, tomato, hummus, cucumber"
+    "ingredients": [
+      { "name": "Whole wheat tortilla", "weight": 1, "unit": "pcs" },
+      { "name": "Sliced turkey", "weight": 100, "unit": "g" },
+      { "name": "Lettuce", "weight": 30, "unit": "g" },
+      { "name": "Tomato", "weight": 50, "unit": "g" },
+      { "name": "Hummus", "weight": 30, "unit": "g" },
+      { "name": "Cucumber", "weight": 40, "unit": "g" }
+    ]
   },
   {
     "id": 9,

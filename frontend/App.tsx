@@ -3,11 +3,19 @@ import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { RecipeListModal } from './components/RecipeListModal';
 
+import { RecipeDetail } from './components/RecipeDetail';
+
 export default function App() {
+  const [selectedRecipeId, setSelectedRecipeId] = React.useState<number | null>(null);
+
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
-      <RecipeListModal />
+      {selectedRecipeId === null ? (
+        <RecipeListModal onSelectRecipe={(id) => setSelectedRecipeId(id)} />
+      ) : (
+        <RecipeDetail recipeId={selectedRecipeId} onBack={() => setSelectedRecipeId(null)} />
+      )}
     </SafeAreaView>
   );
 }
